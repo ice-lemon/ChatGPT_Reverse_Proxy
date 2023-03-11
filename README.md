@@ -68,9 +68,15 @@ app.run(port=9000, host='0.0.0.0')
 粘贴完毕后，点击“部署”，等待部署完成（1~3分钟）
 
 **注意：**首次部署未开通API网络，不会自动创建触发器，请在触发管理中开通相关服务，并手动创建触发器
+
 ##接口调试
+
 部署完成后，在“触发管理”中可以看到触发器的公网访问路径，
+
 ![file](https://qingshengblog.oss-accelerate.aliyuncs.com/2023/03/20230311113642401.png)
+
 此网址可用于端口转发，可以使用 Postman / Apipost 等工具进行测试：
+
 **注意：** 公网访问路径带有 /release 将其去除后可正常使用
+
 ![file](https://qingshengblog.oss-accelerate.aliyuncs.com/2023/03/20230311114643148.png)
